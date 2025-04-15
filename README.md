@@ -13,7 +13,7 @@ The reason for creating three separate scripts instead of one is that the instal
 
 Each script will reopen the Terminal using the default SUPER+T combination. Please ensure that your terminal opens with this combination or edit the script accordingly.
 
-The script has been partially tested on a Kali VM, and updates may be released in the future.
+The script has been partially tested on a Kali VM using Flipper Zero BadUsb app. Updates may be released in the future.
 
 **Please READ EACH SCRIPT Carefully Before Using**
 
