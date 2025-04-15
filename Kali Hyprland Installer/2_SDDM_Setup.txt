@@ -1,0 +1,21 @@
+DEFAULTDELAY 500
+
+REM This script will install SDDM and then reboot the system.
+
+REM Open terminal
+GUI t
+DELAY 1000
+
+REM Install SDDM
+STRING sudo apt install --no-install-recommends -y sddm
+ENTER
+
+REM Wait for 5 seconds
+DELAY 5000
+
+REM Reboot the system
+STRING sudo reboot
+ENTER
+
+REM Wait for 10 seconds to enter the sudo password
+DELAY 10000

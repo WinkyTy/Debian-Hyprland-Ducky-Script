@@ -1,0 +1,46 @@
+DEFAULTDELAY 500
+
+REM This script will enable deb-src in /etc/apt/sources.list
+REM and perform a full update and upgrade.
+
+REM Open terminal
+GUI t
+DELAY 1000
+
+REM Open sources.list in nano
+STRING sudo nano /etc/apt/sources.list
+ENTER
+DELAY 1000
+
+REM Wait for 10 seconds to enter the sudo password
+DELAY 10000
+
+REM Uncomment deb-src lines (down arrow 4 times, right arrow 2 times, backspace 2 times)
+DOWN
+DELAY 250
+DOWN
+DELAY 250
+DOWN
+DELAY 250
+DOWN
+DELAY 250
+RIGHT
+DELAY 250
+RIGHT
+DELAY 250
+BACKSPACE
+DELAY 250
+BACKSPACE
+DELAY 500
+
+REM Save and exit nano (CTRL+X, Y, ENTER)
+CTRL X
+DELAY 500
+STRING y
+DELAY 500
+ENTER
+DELAY 1000
+
+REM Update and upgrade
+STRING sudo apt update && sudo apt upgrade -y
+ENTER

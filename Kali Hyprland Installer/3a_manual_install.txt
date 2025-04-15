@@ -1,0 +1,14 @@
+DEFAULTDELAY 500
+
+REM This script will install Hyprland using the provided script.
+
+REM Open terminal
+GUI t
+DELAY 1000
+
+REM Execute the Hyprland installation script
+STRING sh <(curl -L https://raw.githubusercontent.com/JaKooLit/Debian-Hyprland/main/auto-install.sh)
+ENTER
+
+REM Wait for 10 seconds to enter the sudo password
+DELAY 10000
