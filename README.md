@@ -4,6 +4,7 @@ I created this script solely for learning purposes, using the DUCKY language. It
 Please note that I only developed the DUCKY script, and all information regarding Hyprland or JaKoolit's kit can be found on their respective GitHub pages. I would like to extend a big thank you to the creators of these projects for their excellent work.
 
 **hyprvm's official hub:** https://github.com/hyprwm/Hyprland
+
 **JaKoolit's hub:** https://github.com/JaKooLit/Debian-Hyprland
 
 This script, which consists of three separate scripts, is designed to install JaKoolit's Debian-Hyprland auto-install script with minimal user interaction. The default delays are intentionally set to be longer than necessary, allowing users to manually adjust them if needed. The default delay window for entering the sudo password is 10 seconds, which should be sufficient for two attempts. If you encounter any issues, simply cancel the script.
